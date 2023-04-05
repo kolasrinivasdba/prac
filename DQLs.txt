@@ -1,0 +1,15 @@
+dm_location
+dm_filestore
+dm_job
+dm_method
+dm_docbase_config
+dm_server_config
+dm_federation
+
+
+
+select f.name,l.object_name,l.file_system_path from dm_filestore f, dm_location l
+where l.object_name=f.root
+
+
+
